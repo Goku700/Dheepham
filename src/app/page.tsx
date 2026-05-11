@@ -105,7 +105,7 @@ const Hero = () => (
         <div className="inline-flex items-center gap-2 bg-emerald-100 text-primary px-3 py-1 rounded-full text-sm font-semibold mb-6">
           <Flame className="w-4 h-4" /> Eco-Friendly Energy Solutions
         </div>
-        <h1 className="text-5xl md:text-7xl font-outfit font-extrabold leading-tight mb-6">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-outfit font-extrabold leading-tight mb-6">
           Sustainable Fuel for a <span className="text-gradient">Greener Future</span>
         </h1>
         <p className="text-xl text-slate-600 mb-8 max-w-lg">
@@ -199,30 +199,30 @@ export default function Home() {
 
       {/* --- Features Strip --- */}
       <section className="bg-emerald-50 py-12 relative overflow-hidden border-y border-emerald-100">
-        <div className="container mx-auto px-6 flex flex-wrap justify-between gap-8 items-center relative z-10 text-primary">
+        <div className="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 items-center relative z-10 text-primary">
           <div className="flex items-center gap-4">
-            <Leaf className="w-10 h-10" />
+            <Leaf className="w-10 h-10 shrink-0" />
             <div>
               <p className="text-primary text-xs font-bold uppercase tracking-widest">Efficiency</p>
               <p className="text-lg font-bold">100% Eco-Friendly</p>
             </div>
           </div>
-          <div className="flex items-center gap-4 border-l border-emerald-200 pl-8">
-            <Flame className="w-10 h-10" />
+          <div className="flex items-center gap-4 sm:border-l sm:border-emerald-200 sm:pl-8">
+            <Flame className="w-10 h-10 shrink-0" />
             <div>
               <p className="text-primary text-xs font-bold uppercase tracking-widest">Energy</p>
               <p className="text-lg font-bold">High Calorific Value</p>
             </div>
           </div>
-          <div className="flex items-center gap-4 border-l border-emerald-200 pl-8">
-            <Settings className="w-10 h-10" />
+          <div className="flex items-center gap-4 lg:border-l lg:border-emerald-200 lg:pl-8">
+            <Settings className="w-10 h-10 shrink-0" />
             <div>
               <p className="text-primary text-xs font-bold uppercase tracking-widest">Process</p>
               <p className="text-lg font-bold">State-of-art Facility</p>
             </div>
           </div>
-          <div className="flex items-center gap-4 border-l border-emerald-200 pl-8">
-            <CheckCircle2 className="w-10 h-10" />
+          <div className="flex items-center gap-4 sm:border-l sm:border-emerald-200 sm:pl-8 lg:border-l lg:border-emerald-200 lg:pl-8">
+            <CheckCircle2 className="w-10 h-10 shrink-0" />
             <div>
               <p className="text-primary text-xs font-bold uppercase tracking-widest">Trust</p>
               <p className="text-lg font-bold">GST Registered</p>
@@ -239,7 +239,7 @@ export default function Home() {
             Precisely engineered biomass products optimized for thermal efficiency and environmental sustainability.
           </p>
         </div>
-        <div className="container mx-auto px-6 grid md:grid-cols-3 gap-10">
+        <div className="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {products.map((product, idx) => (
             <ProductCard key={idx} product={product} index={idx} />
           ))}
