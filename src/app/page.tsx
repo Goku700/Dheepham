@@ -198,33 +198,33 @@ export default function Home() {
       <Hero />
 
       {/* --- Features Strip --- */}
-      <section className="bg-primary py-12 relative overflow-hidden">
-        <div className="container mx-auto px-6 flex flex-wrap justify-between gap-8 items-center relative z-10">
-          <div className="flex items-center gap-4 text-white">
+      <section className="bg-emerald-50 py-12 relative overflow-hidden border-y border-emerald-100">
+        <div className="container mx-auto px-6 flex flex-wrap justify-between gap-8 items-center relative z-10 text-primary">
+          <div className="flex items-center gap-4">
             <Leaf className="w-10 h-10" />
             <div>
-              <p className="text-emerald-100 text-xs font-bold uppercase tracking-widest">Efficiency</p>
+              <p className="text-primary text-xs font-bold uppercase tracking-widest">Efficiency</p>
               <p className="text-lg font-bold">100% Eco-Friendly</p>
             </div>
           </div>
-          <div className="flex items-center gap-4 text-white border-l border-emerald-400/30 pl-8">
+          <div className="flex items-center gap-4 border-l border-emerald-200 pl-8">
             <Flame className="w-10 h-10" />
             <div>
-              <p className="text-emerald-100 text-xs font-bold uppercase tracking-widest">Energy</p>
+              <p className="text-primary text-xs font-bold uppercase tracking-widest">Energy</p>
               <p className="text-lg font-bold">High Calorific Value</p>
             </div>
           </div>
-          <div className="flex items-center gap-4 text-white border-l border-emerald-400/30 pl-8">
+          <div className="flex items-center gap-4 border-l border-emerald-200 pl-8">
             <Settings className="w-10 h-10" />
             <div>
-              <p className="text-emerald-100 text-xs font-bold uppercase tracking-widest">Process</p>
+              <p className="text-primary text-xs font-bold uppercase tracking-widest">Process</p>
               <p className="text-lg font-bold">State-of-art Facility</p>
             </div>
           </div>
-          <div className="flex items-center gap-4 text-white border-l border-emerald-400/30 pl-8">
+          <div className="flex items-center gap-4 border-l border-emerald-200 pl-8">
             <CheckCircle2 className="w-10 h-10" />
             <div>
-              <p className="text-emerald-100 text-xs font-bold uppercase tracking-widest">Trust</p>
+              <p className="text-primary text-xs font-bold uppercase tracking-widest">Trust</p>
               <p className="text-lg font-bold">GST Registered</p>
             </div>
           </div>
@@ -297,7 +297,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-outfit font-bold mb-8">Pioneering Sustainable Industry</h2>
             <div className="space-y-6 text-black text-lg leading-relaxed text-center">
               <p>
-                Based in <span className="text-white font-bold underline decoration-primary underline-offset-4">Tiruvannamalai, Tamil Nadu</span>,
+                Based in <span className="text-primary font-bold underline decoration-primary underline-offset-4">Tiruvannamalai, Tamil Nadu</span>,
                 Dheepham Agro Fuels is committed to bridging the gap between agricultural abundance and industrial energy needs.
               </p>
               <p>
