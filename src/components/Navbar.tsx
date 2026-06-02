@@ -31,8 +31,8 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`fixed w-full z-50 transition-all duration-300 ${isSticky
-                ? 'bg-white/95 backdrop-blur-md shadow-lg py-3 border-b border-slate-100'
+            className={`fixed w-full z-50 transition-all duration-300 ${isSticky || isOpen
+                ? 'bg-white shadow-lg py-3 border-b border-slate-100'
                 : 'bg-transparent py-5'
                 }`}
         >

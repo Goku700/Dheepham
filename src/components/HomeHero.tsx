@@ -46,6 +46,7 @@ const HomeHero = () => {
                     initial={{ opacity: 0, x: -60 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
+                    className="text-center lg:text-left flex flex-col items-center lg:items-start"
                 >
                     <div className="inline-flex items-center gap-3 bg-white/80 backdrop-blur-sm border border-emerald-100 text-primary px-5 py-2.5 rounded-full text-sm font-bold mb-8 shadow-sm">
                         <Flame className="w-4 h-4 animate-pulse" />
@@ -68,7 +69,7 @@ const HomeHero = () => {
                         The carbon-neutral industrial energy choice for a <span className="text-secondary font-bold underline decoration-primary/30 underline-offset-4">Cleaner Tamil Nadu</span>.
                     </p>
 
-                    <div className="flex flex-wrap gap-5">
+                    <div className="flex flex-wrap justify-center lg:justify-start gap-5">
                         <Link href="/products" className="group bg-emerald-800 text-white px-8 md:px-10 py-4 md:py-5 rounded-2xl font-black text-lg hover:bg-emerald-900 transition-all shadow-2xl shadow-emerald-200 flex items-center justify-center gap-3 active:scale-95">
                             Explore Catalog <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </Link>

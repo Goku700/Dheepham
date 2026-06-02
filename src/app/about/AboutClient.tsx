@@ -109,7 +109,7 @@ export default function AboutPage() {
                     <div className="max-w-6xl mx-auto">
                         <div className="grid lg:grid-cols-12 gap-16 items-center">
                             {/* Profile Visual Area */}
-                            <div className="lg:col-span-5 relative">
+                            <div className="lg:col-span-5 relative hidden lg:block">
                                 <motion.div
                                     initial={{ opacity: 0, scale: 0.9 }}
                                     whileInView={{ opacity: 1, scale: 1 }}
