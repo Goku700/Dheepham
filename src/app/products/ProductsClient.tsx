@@ -9,22 +9,58 @@ import { Flame, Star, ShieldCheck, Zap } from 'lucide-react';
 
 const products = [
     {
-        title: "Bio Mass Briquette 90MM",
-        description: "Our flagship high-density cylindrical briquettes with 90mm diameter. These are specifically engineered for heavy industrial boilers, providing sustained heat and minimal smoke.",
+        title: "Bio Mass Briquette",
+        description: "Engineered for maximum thermal density, our 90mm briquettes are the ideal coal alternative for high-capacity industrial boilers, delivering 4200+ Kcal/Kg calorific value.",
         image: "/images/briquettes-90.png",
-        specs: ["90mm Diameter", "4200+ Kcal/Kg", "Ash Content < 8%"]
+        specs: ["Main Fuel Product", "4200+ Kcal/Kg", "Low Ash (< 5%)"]
     },
     {
-        title: "Briquette 70MM",
-        description: "Versatile 70mm diameter briquettes ideal for medium-scale industrial furnaces, commercial heating, and specialized kilns requiring precise temperature control.",
-        image: "/images/briquettes-70.png",
-        specs: ["70mm Diameter", "4000+ Kcal/Kg", "Consistent Burn Rate"]
-    },
-    {
-        title: "Premium Bio Pellets",
-        description: "Premium wood and biomass pellets available in 6mm to 10mm sizes. Perfectly suited for automated feeding systems, domestic pellet stoves, and high-efficiency boilers.",
+        title: "Premium Pellets",
+        description: "Ultra-low moisture wood pellets (<8%) designed for automated screw-feeding systems in power plants and thermal heaters, ensuring uniform combustion.",
         image: "/images/pellets.png",
-        specs: ["6mm - 10mm Sizes", "Low Moisture < 10%", "Uniform Density"]
+        specs: ["6mm - 10mm Sizes", "Low Moisture (< 8%)", "Automated Feeding"]
+    },
+    {
+        title: "Cashew Shell Cake",
+        description: "A potent renewable resource offering exceptional calorific value, perfect for brick kilns and heavy-duty combustion processes in industrial settings.",
+        image: "/images/cashew-shell-cake.png",
+        specs: ["De-oiled Quality", "Intense Thermal Power", "Cost Effective"]
+    },
+    {
+        title: "Palm Shell",
+        description: "High oil content shells providing intense, long-lasting heat. Preferred for its robust energy-to-volume ratio in large thermal power units.",
+        image: "/images/palm-shell.png",
+        specs: ["High Oil Content", "Long Steady Burn", "Minimal Smoke"]
+    },
+    {
+        title: "Wood Chips",
+        description: "Standardized sizing perfectly suited for vibrating grate boilers, ensuring uniform combustion and zero clinking in industrial furnaces.",
+        image: "/images/wood-chips.png",
+        specs: ["Uniform Sizing", "Vibrate Grate Ready", "Fast Ignition"]
+    },
+    {
+        title: "Tamarind Husk",
+        description: "A professional-grade cost-effective biomass option for fluid bed combustion, widely used in chemical and textile processing units.",
+        image: "/images/tamarind-husk.png",
+        specs: ["Fluid Bed Ready", "Textile & Chemical Use", "Bulk Industrial Supply"]
+    },
+    {
+        title: "Groundnut Shell",
+        description: "Dry, versatile agro-residue fuel with rapid ignition properties, ideal for small to medium scale thermal steam applications.",
+        image: "/images/groundnut-shell.png",
+        specs: ["Rapid Ignition", "Dry Matter Quality", "Steam Efficiency"]
+    },
+    {
+        title: "Saw Dust",
+        description: "High-surface-area byproduct that ensures rapid temperature spikes in specialized burner systems and biomass co-firing plants.",
+        image: "/images/saw-dust.png",
+        specs: ["Kiln-Dry Quality", "Instant Heat Spikes", "Zero Additives"]
+    },
+    {
+        title: "Rice Husk",
+        description: "Clean-burning residue with high silica content, providing a reliable and steady heat source for rice mills and parboiling units.",
+        image: "/images/rice-husk.png",
+        specs: ["High Silica (Steady)", "Certified Agro-Waste", "Continuous Supply"]
     }
 ];
 
@@ -34,7 +70,7 @@ export default function ProductsPage() {
             <Navbar />
 
             {/* Hero Section */}
-            <section className="pt-32 pb-20 bg-emerald-900 text-white relative overflow-hidden">
+            <section className="pt-24 md:pt-32 pb-12 md:pb-20 bg-emerald-900 text-white relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <div className="absolute top-0 right-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
                     <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-500 rounded-full blur-3xl"></div>
@@ -48,7 +84,7 @@ export default function ProductsPage() {
                     >
                         <Star className="w-4 h-4 text-emerald-400" /> Premium Fuel Solutions
                     </motion.div>
-                    <h1 className="text-4xl md:text-6xl font-outfit font-extrabold mb-6">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-outfit font-extrabold mb-6">
                         Sustainable Energy <span className="text-primary italic">Catalogue</span>
                     </h1>
                     <p className="text-xl text-emerald-100 max-w-2xl mx-auto mb-10 leading-relaxed">
@@ -58,7 +94,7 @@ export default function ProductsPage() {
             </section>
 
             {/* Product Grid */}
-            <section className="py-24">
+            <section className="py-16 md:py-24">
                 <div className="container mx-auto px-4 md:px-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                         {products.map((product, idx) => (
@@ -68,39 +104,27 @@ export default function ProductsPage() {
                 </div>
             </section>
 
-            {/* Comparison/Technical Section */}
-            <section className="py-24 bg-white border-y border-slate-100">
+            <section className="py-16 md:py-24 bg-white border-y border-slate-100">
                 <div className="container mx-auto px-4 md:px-6">
-                    <div className="grid lg:grid-cols-2 gap-16 items-center">
-                        <div>
-                            <h2 className="text-3xl md:text-4xl font-outfit font-bold mb-8 text-secondary">Why Switch to Dheepham Bio-Fuels?</h2>
-                            <div className="space-y-6">
-                                {[
-                                    { icon: Zap, title: "High Thermal Efficiency", desc: "Our products offer high calorific values comparable to C-grade coal." },
-                                    { icon: Flame, title: "Longer Ignition Time", desc: "Denser composition ensures a steady, long-lasting flame for industrial use." },
-                                    { icon: ShieldCheck, title: "Clean Combustion", desc: "Minimal sulfur and nitrogen oxides emissions, preserving your equipment and the planet." }
-                                ].map((item, i) => (
-                                    <div key={i} className="flex gap-6 p-6 rounded-2xl hover:bg-emerald-50 transition-colors border border-transparent hover:border-emerald-100">
-                                        <div className="bg-primary/10 p-4 rounded-2xl text-primary shrink-0">
-                                            <item.icon className="w-6 h-6" />
-                                        </div>
-                                        <div>
-                                            <h4 className="text-xl font-bold mb-2 text-slate-800">{item.title}</h4>
-                                            <p className="text-slate-600">{item.desc}</p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
+                    <div className="max-w-4xl mx-auto">
+                        <div className="text-center mb-16">
+                            <h2 className="text-3xl md:text-5xl font-outfit font-bold text-secondary italic">Why Switch to Dheepham Bio-Fuels?</h2>
+                            <p className="text-slate-500 mt-4 text-lg">Experience the thermal power of engineered biomass sustainability.</p>
                         </div>
-                        <div className="bg-slate-900 rounded-[3rem] p-10 md:p-16 text-white relative flex flex-col items-center text-center overflow-hidden">
-                            <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-2xl"></div>
-                            <h3 className="text-3xl font-outfit font-bold mb-6 italic tracking-tight">Need a Custom Size?</h3>
-                            <p className="text-slate-400 mb-8 max-w-sm">
-                                We can produce briquettes and pellets in custom diameters tailored to your specific industrial requirements.
-                            </p>
-                            <a href="/contact" className="bg-primary hover:bg-emerald-600 text-white px-10 py-5 rounded-2xl font-bold transition-all shadow-xl shadow-emerald-900/50">
-                                Request Technical Specs
-                            </a>
+                        <div className="grid md:grid-cols-3 gap-8">
+                            {[
+                                { icon: Zap, title: "High Efficiency", desc: "Thermal output comparable to C-grade coal." },
+                                { icon: Flame, title: "Steady Burn", desc: "Denser composition for a long-lasting flame." },
+                                { icon: ShieldCheck, title: "Clean Air", desc: "Minimal emissions for a healthier planet." }
+                            ].map((item, i) => (
+                                <div key={i} className="flex flex-col items-center text-center p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-emerald-50 transition-all group">
+                                    <div className="bg-white p-4 rounded-2xl text-primary shadow-sm mb-6 group-hover:scale-110 transition-transform">
+                                        <item.icon className="w-8 h-8" />
+                                    </div>
+                                    <h4 className="text-xl font-bold mb-3 text-slate-800">{item.title}</h4>
+                                    <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>

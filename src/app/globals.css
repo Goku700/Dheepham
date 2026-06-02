@@ -4,20 +4,16 @@
   --color-primary: #15803d;
   --color-secondary: #166534;
   --color-accent: #fbbf24;
+  --font-sans: var(--font-inter);
   --font-outfit: var(--font-outfit);
   --font-inter: var(--font-inter);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
 }
 
 :root {
   --background: #ffffff;
   --foreground: #0f172a;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0f172a;
-    --foreground: #f8fafc;
-  }
 }
 
 body {

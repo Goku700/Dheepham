@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { MapPin, Phone, Mail, Camera, MessageCircle, Globe } from 'lucide-react';
+import { MapPin, Phone, Mail } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -17,27 +17,13 @@ const Footer = () => {
                                 <Image src="/favicon.png" alt="Logo" fill className="object-contain" />
                             </div>
                             <span className="text-2xl font-bold font-outfit uppercase tracking-tighter text-white">
-                                Dheepham <span className="text-primary italic">Agro</span>
+                                Dheepham <span className="text-primary italic">Agro Fuels</span>
                             </span>
                         </Link>
                         <p className="mb-8 leading-relaxed text-slate-400">
                             Transforming agricultural waste into high-efficiency energy. We provide sustainable biomass solutions for a cleaner industrial tomorrow.
                         </p>
-                        <div className="flex gap-4">
-                            {[
-                                { Icon: Camera, href: '#' },
-                                { Icon: MessageCircle, href: '#' },
-                                { Icon: Globe, href: '#' }
-                            ].map((social, idx) => (
-                                <a
-                                    key={idx}
-                                    href={social.href}
-                                    className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all text-slate-400"
-                                >
-                                    <social.Icon className="w-5 h-5" />
-                                </a>
-                            ))}
-                        </div>
+
                     </div>
 
                     {/* Quick Links */}
@@ -75,7 +61,14 @@ const Footer = () => {
                                 <div className="bg-slate-800 p-3 rounded-xl text-primary shrink-0">
                                     <MapPin className="w-5 h-5" />
                                 </div>
-                                <span className="text-sm">No.46, Sidco Industrial Estate, Periyakolapadi, Tiruvannamalai, TN</span>
+                                <a
+                                    href="https://www.google.com/maps?q=Dheepham+Agro+Fuels+SIDCO+Industrial+Estate+Periyakolapadi+Tiruvannamalai"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-sm hover:text-primary transition-colors"
+                                >
+                                    No.46, Sidco Industrial Estate, Periyakolapadi, Tiruvannamalai, TN
+                                </a>
                             </li>
                             <li className="flex gap-4 italic font-bold text-white tracking-widest ">
                                 <div className="bg-slate-800 p-3 rounded-xl text-primary shrink-0">
@@ -116,7 +109,7 @@ const Footer = () => {
                     <p className="text-sm">© 2026 Dheepham Agro Fuels. All Rights Reserved.</p>
                     <div className="flex gap-8 text-sm">
                         <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-                        <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+
                     </div>
                 </div>
             </div>

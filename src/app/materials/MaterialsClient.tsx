@@ -17,8 +17,7 @@ const rawMaterials = [
     { name: "Wood bark", category: "Natural Resource" },
     { name: "Rice husk", category: "Agro-Waste" },
     { name: "Wheat husk", category: "Agro-Waste" },
-    { name: "Juliflora wood chips", category: "Invasive Species" },
-    { name: "Coal", category: "Mining Product" }
+    { name: "Juliflora wood chips", category: "Invasive Species" }
 ];
 
 export default function MaterialsPage() {
@@ -27,7 +26,7 @@ export default function MaterialsPage() {
             <Navbar />
 
             {/* Hero Section */}
-            <section className="pt-32 pb-20 bg-slate-50 relative overflow-hidden">
+            <section className="pt-24 md:pt-40 pb-12 md:pb-20 bg-slate-50 relative overflow-hidden">
                 <div className="container mx-auto px-4 md:px-6">
                     <div className="max-w-3xl">
                         <motion.span
@@ -37,7 +36,7 @@ export default function MaterialsPage() {
                         >
                             Sourcing & Sustainability
                         </motion.span>
-                        <h1 className="text-4xl md:text-6xl font-outfit font-extrabold text-secondary mb-8 leading-tight">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-outfit font-extrabold text-secondary mb-8 leading-tight">
                             Premium Raw <span className="text-primary italic">Materials</span>
                         </h1>
                         <p className="text-xl text-slate-600 mb-10 leading-relaxed">
@@ -57,7 +56,7 @@ export default function MaterialsPage() {
                             transition={{ duration: 0.8 }}
                             className="relative"
                         >
-                            <div className="rounded-[3rem] overflow-hidden shadow-2xl">
+                            <div className="rounded-[2.5rem] md:rounded-[3rem] overflow-hidden shadow-2xl">
                                 <Image
                                     src="/images/materials.png"
                                     alt="Raw Materials Collection"

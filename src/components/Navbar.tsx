@@ -42,13 +42,13 @@ const Navbar = () => {
                     <div className="relative w-10 h-10 group-hover:rotate-12 transition-transform duration-300">
                         <Image
                             src="/favicon.png"
-                            alt="Dheepham Agro Logo"
+                            alt="Dheepham Agro Fuels Logo"
                             fill
                             className="object-contain"
                         />
                     </div>
                     <span className="text-xl md:text-2xl font-outfit font-extrabold uppercase tracking-tighter text-slate-900">
-                        Dheepham <span className="text-primary italic">Agro</span>
+                        Dheepham <span className="text-primary italic">Agro Fuels</span>
                     </span>
                 </Link>
 
@@ -107,7 +107,7 @@ const Navbar = () => {
                                     <div className="relative w-8 h-8">
                                         <Image src="/favicon.png" alt="Logo" fill className="object-contain" />
                                     </div>
-                                    <span className="font-outfit font-bold text-slate-900">Dheepham Agro</span>
+                                    <span className="font-outfit font-bold text-slate-900">Dheepham Agro Fuels</span>
                                 </div>
                                 <button onClick={() => setIsOpen(false)} className="p-2 hover:bg-slate-100 rounded-full">
                                     <X className="w-6 h-6 text-slate-500" />

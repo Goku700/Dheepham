@@ -17,9 +17,11 @@ const ProductCard = ({ product, index }: { product: Product; index: number }) =>
     <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
+        whileHover={{ scale: 1.02, zIndex: 20 }}
+        whileTap={{ scale: 1.05, zIndex: 30 }}
         viewport={{ once: true }}
-        transition={{ delay: index * 0.1 }}
-        className="bg-white rounded-[2rem] overflow-hidden shadow-xl border border-slate-100 flex flex-col h-full group hover:shadow-2xl hover:shadow-emerald-100 transition-all duration-500"
+        transition={{ delay: index * 0.1, duration: 0.3 }}
+        className="bg-white rounded-[2rem] overflow-hidden shadow-xl border border-slate-100 flex flex-col h-full group hover:shadow-2xl hover:shadow-emerald-100 transition-all duration-300 relative cursor-pointer"
     >
         <div className="relative h-64 md:h-72 overflow-hidden">
             <Image
@@ -54,7 +56,7 @@ const ProductCard = ({ product, index }: { product: Product; index: number }) =>
                     href="/contact"
                     className="w-full bg-slate-900 text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 group-hover:bg-emerald-800 transition-all duration-300 shadow-lg shadow-slate-200"
                 >
-                    Check Price <ChevronRight className="w-4 h-4" />
+                    Enquire Now <ChevronRight className="w-4 h-4" />
                 </Link>
             </div>
         </div>
