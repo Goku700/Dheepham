@@ -8,9 +8,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 
 const backgroundImages = [
-    "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2069&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop"
+    "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=75&w=1440",
+    "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=75&w=1440",
+    "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=75&w=1440"
 ];
 
 export default function ContactPage() {
