@@ -34,10 +34,10 @@ export default function ContactPage() {
                         <motion.div
                             key={currentImage}
                             initial={{ opacity: 0, scale: 1.1 }}
-                            animate={{ opacity: 0.4, scale: 1 }}
+                            animate={{ opacity: 0.6, scale: 1 }}
                             exit={{ opacity: 0, scale: 1.1 }}
                             transition={{ duration: 2, ease: "easeInOut" }}
-                            className="relative w-full h-full"
+                            className="absolute inset-0"
                         >
                             <Image
                                 src={backgroundImages[currentImage]}
